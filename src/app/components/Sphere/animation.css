@@ -1,0 +1,51 @@
+.sphere__wrapper {
+  perspective: 50rem;
+  perspective-origin: 50% 6.25rem;
+}
+
+.sphere {
+  position: relative;
+  width: 31.25rem;
+  height: 31.25rem;
+  transform-style: preserve-3d;
+  animation: sphereSpin 60s infinite linear;
+}
+
+.sphere > div {
+  border: solid 2px #036605;
+  border-radius: 50%;
+  height: 31.25rem;
+  opacity: 0.8;
+  position: absolute;
+  width: 31.25rem;
+}
+
+div.sphere__equator {
+  transform: rotateX(90deg);
+}
+
+div.sphere__tropic {
+  height: 27.75rem;
+  margin: 1.75rem;
+  width: 27.75rem;
+}
+
+div.sphere__cancer {
+  transform: translateY(-5.625rem) rotateX(90deg);
+}
+
+div.sphere__capricorn {
+  transform: translateY(5.625rem) rotateX(90deg);
+}
+
+@keyframes sphereSpin {
+  0% {
+    transform: rotateX(15deg) rotateY(0) rotateZ(15deg);
+  }
+  50% {
+    transform: rotateX(-15deg) rotateY(180deg) rotateZ(-15deg);
+  }
+  100% {
+    transform: rotateX(15deg) rotateY(360deg) rotateZ(15deg);
+  }
+}
