@@ -2,7 +2,7 @@
 
 import { Projects } from "@/app/components/Projects";
 import { Home } from "@/app/components/Home";
-import { About } from "./components/About";
+import { Experience } from "./components/Experience";
 
 import { useMotionValueEvent, useScroll } from "framer-motion";
 
@@ -29,7 +29,7 @@ export default function App() {
   return (
     <>
       <Home />
-      <About />
+      <Experience />
       <Projects />
     </>
   );

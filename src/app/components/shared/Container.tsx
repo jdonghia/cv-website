@@ -6,19 +6,19 @@ interface Props {
 }
 
 export function Container({ children, text }: Props) {
-  const Spanbar = <span className="block h-2 w-5/12 bg-matrix-light" />;
   return (
-    <main className="h-screen">
-      <div className="mt-20 w-full px-5 text-center">
-        <div className="flex items-center justify-center gap-5">
-          {Spanbar}
-          <h2 className="mb-3 mt-5 w-2/12 text-7xl font-bold leading-tight">
+    <div>
+      <div className="w-full px-5 text-center">
+        <div className="mb-10 flex items-center gap-6">
+          <span className="block h-1 w-1/12 bg-matrix-dark" />
+          <h2 className="mb-6 text-7xl font-semibold">
             {text}
+            <span className="text-matrix-light">.</span>
           </h2>
-          {Spanbar}
+          <span className="block h-1 w-fit grow bg-matrix-dark" />
         </div>
       </div>
       {children}
-    </main>
+    </div>
   );
 }

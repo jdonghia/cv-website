@@ -11,7 +11,7 @@ export function CustomLayout() {
     { label: "Projects" },
     { label: "Experiences" },
     { label: "Skills" },
-    { label: "About" },
+    { label: "Experience" },
     { label: "Contact" },
   ];
 
