@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Container } from "./shared/Container";
 import { motion, useAnimate, useAnimation, useInView } from "framer-motion";
 
-export function Experience() {
+export default function Experience() {
   const experiences = [
     {
       company: "Jive Investments",
@@ -94,7 +94,7 @@ export function Experience() {
           </ul>
         </>
       ),
-      stack: ["ServiceNow", "React", "Javascript"],
+      stack: ["Excel", "Word"],
     },
   ];
 
@@ -110,7 +110,12 @@ export function Experience() {
   }, [isInView]);
 
   return (
-    <Container text="Experience">
+    <>
+      <div className="m-auto flex w-11/12 items-center justify-center gap-5">
+        <span className="m-auto block h-px w-1/12 bg-custom-gray"></span>
+        <h3 className="text-4xl font-bold">Experience.</h3>
+        <span className="m-auto block h-px grow  bg-custom-gray"></span>
+      </div>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -122,12 +127,12 @@ export function Experience() {
       >
         <div
           ref={ref}
-          className="m-auto mb-10 flex w-11/12 flex-wrap items-center gap-10"
+          className="mb-24 mt-16 flex flex-wrap  justify-center gap-20"
         >
           {experiences.map(({ company, date, as, local, text, stack }) => {
             return (
-              <div className="m-auto w-[45%]">
-                <div className="flex h-96 w-full flex-col items-center gap-2 border-b border-s border-t border-gray-800 p-5 font-medium">
+              <div className="w-2/5">
+                <div className="X flex h-96 flex-col items-center gap-2 border border-gray-800 p-5">
                   <div className="flex w-full justify-between">
                     <h3 className="text-lg font-bold">{company}</h3>
                     <p className="font-light">{date}</p>
@@ -138,7 +143,9 @@ export function Experience() {
                     </h4>
                     <p className="font-light">{local}</p>
                   </div>
-                  <div className="text-medium self-start">{text}</div>
+                  <div className="text-medium self-start font-medium">
+                    {text}
+                  </div>
                   <ul className="mt-4 flex w-full grow gap-7 self-end">
                     {stack.map((item) => (
                       <li className="self-end rounded-sm bg-custom-gray p-1 px-2">
@@ -152,6 +159,6 @@ export function Experience() {
           })}
         </div>
       </motion.div>
-    </Container>
+    </>
   );
 }

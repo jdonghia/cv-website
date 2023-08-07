@@ -1,11 +1,15 @@
-import "./globals.css";
-import { CustomLayout } from "@/app/components/CustomLayout";
+"use client";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import { ReactNode } from "react";
+import { CustomLayout } from "@/app/components";
+
+import "./globals.css";
+
+interface Props {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: Props) {
   return (
     <html>
       <head>
@@ -14,7 +18,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-black font-chakra text-white">
+      <body className="bg-black font-chakra text-slate-100">
         <CustomLayout />
         {children}
       </body>

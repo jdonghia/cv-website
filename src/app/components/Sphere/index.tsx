@@ -1,8 +1,8 @@
 "use client";
 
-import "./animation.css";
-
 import { useEffect, useRef } from "react";
+
+import "./animation.css";
 
 export function Sphere() {
   const sphereRef = useRef<HTMLDivElement>(null);
@@ -20,7 +20,7 @@ export function Sphere() {
   }, []);
 
   return (
-    <div className="sphere__wrapper">
+    <div className="sphere__wrapper mb-20">
       <div ref={sphereRef} className="sphere">
         <div className="sphere__equator"></div>
         <div className="sphere__tropic sphere__cancer"></div>

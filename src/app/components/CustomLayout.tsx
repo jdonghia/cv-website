@@ -3,29 +3,31 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { RiNotionFill } from "react-icons/ri";
 
-export function CustomLayout() {
+export default function CustomLayout() {
   const Spanbar = <span className="block h-80 w-px bg-custom-gray"></span>;
 
   const menuItems = [
     { label: "Home" },
-    { label: "Projects" },
-    { label: "Experiences" },
-    { label: "Skills" },
+    { label: "About" },
     { label: "Experience" },
+    { label: "Projects" },
     { label: "Contact" },
   ];
 
   const asideItems = [
-    { icon: AiFillGithub },
-    { icon: AiFillLinkedin },
+    { icon: AiFillGithub, link: "https://github.com/jdonghia" },
+    {
+      icon: AiFillLinkedin,
+      link: "https://www.linkedin.com/in/jo%C3%A3o-donghia-4a0379200/",
+    },
     { icon: RiNotionFill },
   ];
 
   return (
-    <div className="fixed z-50 w-full">
-      <header className="flex items-center justify-between bg-black p-7">
+    <>
+      <header className="fixed z-50 flex w-full items-center justify-between bg-black p-7">
         <div className="flex items-center">
-          <span className="me-36 text-3xl font-bold text-matrix-light">
+          <span className="me-36 cursor-pointer text-3xl font-bold text-matrix-light">
             JND.
           </span>
           <ul className="flex items-center gap-20 text-xl font-bold lowercase">
@@ -42,17 +44,19 @@ export function CustomLayout() {
           joao.donghia@gmail.com
         </address>
       </header>
-      <aside className="float-left ms-10 flex flex-col items-center gap-5">
+      <aside className="fixed z-40 float-left ms-10 mt-10 flex flex-col items-center gap-5">
         {Spanbar}
         <ul className="flex flex-col items-center gap-7">
-          {asideItems.map(({ icon: Icon }) => (
+          {asideItems.map(({ icon: Icon, link }) => (
             <li key={Icon}>
-              <Icon className="cursor-pointer text-3xl transition hover:text-matrix" />
+              <a href={link} target="_blank">
+                <Icon className="cursor-pointer text-3xl transition hover:animate-pulse hover:text-matrix" />
+              </a>
             </li>
           ))}
         </ul>
         {Spanbar}
       </aside>
-    </div>
+    </>
   );
 }

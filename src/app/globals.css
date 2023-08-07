@@ -2,4 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/*  */
+.hexagon {
+  position: relative;
+}
+
+#hexagon-minor {
+  background: #06c909;
+  z-index: 10;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: calc(500px / 3);
+  height: calc(288.68px / 3);
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+#hexagon-minor::before,
+#hexagon-minor::after {
+  content: "";
+  position: absolute;
+  border-left: calc(250px / 3) solid transparent;
+  border-right: calc(250px / 3) solid transparent;
+}
+
+/* "matrix-light": "#06C909",
+        "matrix-medium": "#048A06",
+        "matrix-dark": "#036605",
+        "custom-gray": "#06c909" */
+#hexagon-minor::before {
+  bottom: 100%;
+  border-bottom: calc(144.34px / 3) solid #06c909;
+}
+
+#hexagon-minor::after {
+  top: 100%;
+  border-top: calc(144.34px / 3) solid #06c909;
+}
+
+#hexagon-major {
+  background: #4c5c4d;
+  width: calc(500px / 3 * 1.1);
+  height: calc(288.68px / 3 * 1.1);
+}
+
+#hexagon-major::before,
+#hexagon-major::after {
+  content: "";
+  position: absolute;
+  border-left: calc(250px / 3 * 1.1) solid transparent;
+  border-right: calc(250px / 3 * 1.1) solid transparent;
+}
+#hexagon-major::before {
+  bottom: 100%;
+  border-bottom: calc(144.34px / 3 * 1.1) solid#4C5C4D;
+}
+
+#hexagon-major::after {
+  top: 100%;
+  border-top: calc(144.34px / 3 * 1.1) solid #4c5c4d;
+}

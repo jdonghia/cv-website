@@ -1,6 +1,6 @@
 import { Container } from "./shared/Container";
 
-export function Projects() {
+export default function Projects() {
   const cards = [
     {
       label: "Musiority",
@@ -30,12 +30,12 @@ export function Projects() {
 
   return (
     <Container text="Projects">
-      <p className="my-4 font-vt323 text-2xl text-matrix-medium text-center">
+      {/* <p className="my-4 font-vt323 text-2xl text-matrix-medium text-center">
         Empowering innovation through cutting-edge projects,
         <br /> crafted with React.js and TypeScript, elegantly designed with
         pure CSS, embracing versatility, <br /> exploring diverse templates,
         creating a remarkable impact in the digital realm.
-      </p>
+      </p> */}
       <ul className="mt-7 flex flex-wrap justify-between gap-4 bg-opacity-90">
         {cards.map(({ label, path }) => (
           <div className={`h-96 w-[49.5%] cursor-pointer ${path} bg-cover`}>
