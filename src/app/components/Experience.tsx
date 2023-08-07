@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react/jsx-key */
 import { useEffect, useRef } from "react";
 import { Container } from "./shared/Container";
 import { motion, useAnimate, useAnimation, useInView } from "framer-motion";

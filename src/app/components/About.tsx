@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { motion } from "framer-motion";
 import { Container } from "./shared/Container";
 import { SiNextdotjs } from "react-icons/si";

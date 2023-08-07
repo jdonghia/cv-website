@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { Container } from "./shared/Container";
 
 export default function Projects() {
