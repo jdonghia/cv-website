@@ -1,5 +1,3 @@
-"use client";
-
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { RiNotionFill } from "react-icons/ri";
 
@@ -26,27 +24,25 @@ export default function CustomLayout() {
   return (
     <>
       <header className="fixed z-50 flex w-full items-center justify-between bg-black p-7">
-        <div className="flex items-center">
+        <nav className="flex items-center">
           <span className="me-36 cursor-pointer text-3xl font-bold text-matrix-light">
             JND.
           </span>
           <ul className="flex items-center gap-20 text-xl font-bold lowercase">
             {menuItems.map(({ label }) => (
-              <li key={label}>
-                <a className="cursor-pointer hover:underline" href="/">
-                  {label}
-                </a>
+              <li key={label} className="cursor-pointer hover:underline">
+                {label}
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
         <address className="font-medium not-italic text-matrix-light">
           joao.donghia@gmail.com
         </address>
       </header>
-      <aside className="fixed z-40 float-left ms-10 mt-10 flex flex-col items-center gap-5">
+      <aside className="fixed z-40 ms-10 mt-10 flex flex-col items-center gap-5">
         {Spanbar}
-        <ul className="flex flex-col items-center gap-7">
+        <ul className="flex flex-col gap-6">
           {asideItems.map(({ icon: Icon, link }) => (
             <li key={Icon}>
               <a href={link} target="_blank">

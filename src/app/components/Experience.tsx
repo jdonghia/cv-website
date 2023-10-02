@@ -65,7 +65,7 @@ export default function Experience() {
       text: (
         <>
           <p className="indent-9">
-            I am a member of the front-end team responsible for developing the
+            I was a member of the front-end team responsible for developing the
             project for TIM, a web application for payment management.
           </p>
           <h4 className="my-2">Responsibilities:</h4>

@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import { motion } from "framer-motion";
 import { Container } from "./shared/Container";
 import { SiNextdotjs } from "react-icons/si";
@@ -30,9 +29,12 @@ export default function About() {
             standardized code should be priorities in a system.
           </p>
           <ul className="flex w-full grow justify-between gap-7">
-            {stack.map((item) => (
-              <li className="self-end rounded-sm bg-custom-gray p-1 px-2 font-extrabold uppercase tracking-wider text-matrix-light">
-                {item}
+            {stack.map((tool) => (
+              <li
+                key={tool}
+                className="self-end rounded-sm bg-custom-gray p-1 px-2 font-extrabold uppercase tracking-wider text-matrix-light"
+              >
+                {tool}
               </li>
             ))}
           </ul>
