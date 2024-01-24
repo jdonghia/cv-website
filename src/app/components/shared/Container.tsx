@@ -1,13 +1,13 @@
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 
-interface Props {
+interface Props extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   text: string;
 }
 
-export function Container({ children, text }: Props) {
+export function Container({ children, text, ...props }: Props) {
   return (
-    <div>
+    <div {...props}>
       <div className="w-full px-5 text-center">
         <div className="mb-10 flex items-center gap-6">
           <span className="block h-1 w-1/12 bg-matrix-dark" />

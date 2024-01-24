@@ -14,30 +14,6 @@ export default function Experience() {
       text: (
         <>
           <p className="indent-9">
-            I started my work at Jive as part of the credit team. The main tasks
-            involved management and building new functionalities in the internal
-            system. After that, I transitioned to front-end solutions for
-            creating new applications.
-          </p>
-          <h4 className="my-2">Responsibilities:</h4>
-          <ul className="ms-10 list-disc">
-            <li>Creation of new features</li>
-            <li>Integration of ServiceNow with React using boilerplates</li>
-            <li>Remapping internal systems using open-source tools.</li>
-          </ul>
-        </>
-      ),
-      stack: ["React", "Typescript", "ANT Design", "AWS", "Git"],
-    },
-
-    {
-      company: "Jive Investments",
-      date: "dec-2021/feb-2023",
-      as: "Junior System Analyst",
-      local: "São Paulo, Brazil",
-      text: (
-        <>
-          <p className="indent-9">
             Currently, working with front-end solutions (stack migration),
             instantiating applications via Amplify + Cognito.
           </p>
@@ -52,6 +28,30 @@ export default function Experience() {
               Developing dynamic npm libraries with reusable components and
               global stylings.
             </li>
+          </ul>
+        </>
+      ),
+      stack: ["React", "Typescript", "ANT Design", "AWS", "Git"],
+    },
+
+    {
+      company: "Jive Investments",
+      date: "dec-2021/feb-2023",
+      as: "Junior System Analyst",
+      local: "São Paulo, Brazil",
+      text: (
+        <>
+          <p className="indent-9">
+            I started my work at Jive as part of the credit team. The main tasks
+            involved management and building new functionalities in the internal
+            system. After that, I transitioned to front-end solutions for
+            creating new applications.
+          </p>
+          <h4 className="my-2">Responsibilities:</h4>
+          <ul className="ms-10 list-disc">
+            <li>Creation of new features</li>
+            <li>Integration of ServiceNow with React using boilerplates</li>
+            <li>Remapping internal systems using open-source tools.</li>
           </ul>
         </>
       ),

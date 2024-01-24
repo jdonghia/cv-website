@@ -15,7 +15,7 @@ export default function Home() {
           experiences.
         </p>
       </div>
-      <Sphere />
+      {/* <Sphere /> */}
     </main>
   );
 }
