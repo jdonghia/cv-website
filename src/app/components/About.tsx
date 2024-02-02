@@ -40,7 +40,7 @@ export default function About() {
           </ul>
         </div>
 
-        {/* <motion.div
+        <motion.div
           className="box"
           animate={{
             rotate: [0, 0, 180, 180, 0],
@@ -75,7 +75,7 @@ export default function About() {
               </motion.div>
             </div>
           </div>
-        </motion.div> */}
+        </motion.div>
       </div>
     </Container>
   );
