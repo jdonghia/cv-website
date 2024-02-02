@@ -13,22 +13,20 @@ export default function Experience() {
       local: "São Paulo, Brazil",
       text: (
         <>
-          <p className="indent-9">
-            Currently, working with front-end solutions (stack migration),
-            instantiating applications via Amplify + Cognito.
+          <p className="py-2 pe-5 ps-2">
+            • Currently developing a stack migration to an open-source solution,
+            enabling the business to adopt a new platform for management and
+            eliminate the need for ServiceNow licenses. Building a dynamic
+            application using React (Typescript), AWS Services, and PostgreSQL.
           </p>
-          <h4 className="my-2">Responsibilities:</h4>
-          <ul className="ms-10 list-disc">
-            <li>
-              Crafting documentation for best practices and code
-              standardizations.
-            </li>
-            <li>Creating new front-end features.</li>
-            <li>
-              Developing dynamic npm libraries with reusable components and
-              global stylings.
-            </li>
-          </ul>
+          <p className="py-2 pe-5 ps-2">
+            • Responsible for maintaining and managing front-end applications.
+          </p>
+          <p className="pe-5 ps-2">
+            • Conducted best practice workshops for repository versioning (Git
+            Flow and Git Conventional), Clean Code and SOLID principles. Created
+            technical documentation for dynamic frontend component usage.
+          </p>
         </>
       ),
       stack: ["React", "Typescript", "ANT Design", "AWS", "Git"],
@@ -41,18 +39,24 @@ export default function Experience() {
       local: "São Paulo, Brazil",
       text: (
         <>
-          <p className="indent-9">
-            I started my work at Jive as part of the credit team. The main tasks
-            involved management and building new functionalities in the internal
-            system. After that, I transitioned to front-end solutions for
-            creating new applications.
+          <p className="py-2 pe-5 ps-2">
+            • Introduced and developed React boilerplates to facilitate
+            componentized frontend development within the ServiceNow instance.
+            Integrated data using scripts and APIs from the ServiceNow
+            production environment.
           </p>
-          <h4 className="my-2">Responsibilities:</h4>
-          <ul className="ms-10 list-disc">
-            <li>Creation of new features</li>
-            <li>Integration of ServiceNow with React using boilerplates</li>
-            <li>Remapping internal systems using open-source tools.</li>
-          </ul>
+          <p className="py-2 pe-5 ps-2">
+            • Created a frontend application from scratch for external users
+            (law firms and company partners) to access, create, and modify data
+            from the ServiceNow environment.
+          </p>
+          <p className="pe-5 ps-2">
+            • Developed new features within ServiceNow (automations, business
+            rules, scheduled jobs) to streamline company business processes and
+            conducted workshops to introduce and explain React fundamentals and
+            concepts (component lifecycle, structure, states, hooks, providers,
+            routers, SPAs).
+          </p>
         </>
       ),
       stack: ["ServiceNow", "React", "Javascript", "Git"],
@@ -64,17 +68,17 @@ export default function Experience() {
       local: "São Paulo, Brazil",
       text: (
         <>
-          <p className="indent-9">
-            I was a member of the front-end team responsible for developing the
-            project for TIM, a web application for payment management.
+          <p className="py-2 pe-5 ps-2">
+            • Developed a web application for payment management for TIM
+            (Telecom) company using Vue.js, Git, and Bootstrap.
           </p>
-          <h4 className="my-2">Responsibilities:</h4>
-          <ul className="ms-10 list-disc">
-            <li>Crafting new features</li>
-            <li>Designing layouts</li>
-            <li>Handling requests and imports</li>
-            <li>Version control using Git Flow and Git Conventional.</li>
-          </ul>
+          <p className="py-2 pe-5 ps-2">
+            • Integrations with APIs built with Kotlin and Java Spring Boot.
+          </p>
+          <p className="pe-5 ps-2">
+            • Migrated a monolithic legacy application from Ruby on Rails to a
+            modern SPA Vue.js application, resulting in improved performance.
+          </p>
         </>
       ),
       stack: ["Vue", "Javascript", "Git"],
@@ -87,13 +91,19 @@ export default function Experience() {
       local: "São Paulo, Brazil",
       text: (
         <>
-          <p>Administrative Apprentice at Grayline</p>
-          <h4 className="my-2">Engaged in supportive tasks including:</h4>
-          <ul className="ms-10 list-disc">
-            <li>Invoice verification</li>
-            <li>Document organization</li>
-            <li>Data entry into spreadsheets using Excel.</li>
-          </ul>
+          <p className="py-2 pe-5 ps-2">
+            • First experience working with an international company, located at
+            Sheraton Grand Rio Hotel, São Conrado.
+          </p>
+          <p className="py-2 pe-5 ps-2">
+            • Grayline is the largest provider of sightseeing tours on the
+            planet, with thousands of tours and experiences in more than 700
+            locations, spanning six continents.
+          </p>
+          <p className="pe-5 ps-2">
+            • Responsibilities included verifying invoices, managing documents,
+            and entering data into Excel spreadsheets.
+          </p>
         </>
       ),
       stack: ["Excel", "Word"],
@@ -134,7 +144,7 @@ export default function Experience() {
           {experiences.map(({ company, date, as, local, text, stack }) => {
             return (
               <div className="w-2/5">
-                <div className="X flex h-96 flex-col items-center gap-2 border border-gray-800 p-5">
+                <div className="X flex h-[30rem] flex-col items-center gap-2 border border-gray-800 p-5">
                   <div className="flex w-full justify-between">
                     <h3 className="text-lg font-bold">{company}</h3>
                     <p className="font-light">{date}</p>
