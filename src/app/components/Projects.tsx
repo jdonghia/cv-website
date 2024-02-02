@@ -25,12 +25,12 @@ export default function Projects() {
     },
     {
       label: "Webcollar",
-      path: "bg-[url('/assets/imgs/projects/next-template-practice.png')]",
+      path: "bg-[url('/assets/imgs/projects/webcollar.png')]",
       repositoryPath: "web-collar-template",
     },
     {
       label: "AI Website",
-      path: "bg-[url('/assets/imgs/projects/ai-website.png')]",
+      path: "bg-[url('/assets/imgs/projects/ai-artificium.png')]",
       repositoryPath: "ai-website-frontend",
     },
   ];
